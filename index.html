@@ -1,110 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Talk2Me</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="./pics/icon.png" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="styles.css" rel="stylesheet" />
-    </head>
-    <body class="d-flex flex-column h-100">
-        <main class="flex-shrink-0">
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-classic">
-                <div class="container px-5">
-                    <a class="navbar-brand" href="index.html"><img src="./pics/T2MH.png" width="160" height="60" ></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                            
-                            <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
-                                    <li><a class="dropdown-item" href="https://www.shadielfares.me">Shadi's Portfolio</a></li>
-                                    <li><a class="dropdown-item" href="https://www.notion.so/furqaankhurram/Furqaan-Khurram-Qamar-13127e5a74034af5a0f1f6ff2cb2873c">Furqaan's Portfolio</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <!-- Header-->
-            <header class="bg-dark py-5">
-                <div class="container px-5">
-                    <div class="row gx-5 align-items-center justify-content-center">
-                        <div class="col-lg-8 col-xl-7 col-xxl-6">
-                            <div class="my-5 text-center text-xl-start">
-                                <h1 class="display-5 fw-bolder text-classic mb-2">Talk 2 Me</h1>
-                                <p class="lead fw-normal text-white mb-4">Genuine connections in a virtual world.</p>
-                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                                    <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Get Started</a>
-                                    <a class="btn btn-outline-light btn-lg px-4" href="./about.html">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="./pics/apple2.png" alt="..." /></div>
-                    </div>
-                </div>
-            </header>
-            <!-- Features section-->
-            <section class="py-5" id="features">
-                <div class="container px-5 my-5">
-                    <div class="row gx-5">
-                        <div class="col-lg-4 mb-5 mb-lg-0"><h2 class="fw-bolder mb-0">Why Talk2Me?</h2></div>
-                        <div class="col-lg-8">
-                            <div class="row gx-5 row-cols-1 row-cols-md-2">
-                                <div class="col mb-5 h-100">
-                                    <div class="feature bg-classic bg-gradient text-white rounded-3 mb-3"><i class="bi bi-columns"></i></div>
-                                    <h2 class="h5">Exclusive</h2>
-                                    <p class="mb-0">Gone are the days of you being 1 of 3 million followers. Talk2Me provides a more personal and exclusive environment with your favourite influencers.</p>
-                                </div>
-                                <div class="col mb-5 h-100">
-                                    <div class="feature bg-classic bg-gradient text-white rounded-3 mb-3"><i class="bi bi-chat-left-dots-fill"></i></div>
-                                    <h2 class="h5">Direct Messaging</h2>
-                                    <p class="mb-0">Message your favourite influencer directly. Ask them about their day or how they got started up in their business!</p>
-                                </div>
-                                <div class="offset-5 mb-5 mb-md-0 h-100">
-                                    <div class="feature bg-classic bg-gradient text-white rounded-3 mb-3"><i class="bi bi-phone-fill"></i></div>
-                                    <h2 class="h5">Live Calls</h2>
-                                    <p class="mb-0">Call your favourite influencers, <h6>live.</h6></p>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Testimonial section-->
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="shortcut icon" href="./pics/icon.png">
+   <!-- GOOGLE FONTS CDN LINK -->
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet">
+   <!-- CSS LINK -->
+   <link rel="stylesheet" href="css/bootstrap.css">
+   <!-- AOS ANIAMATION PLUGIN -->
+   <link rel="stylesheet" href="css/animate.css">
+   <!-- OWL CAROUSEL PLUGIN -->
+   <link rel="stylesheet" href="css/owl.carousel.min.css">
+   <link rel="stylesheet" href="css/owl.theme.default.min.css">
+   <!-- MAGNIFIC POPUP PLUGIN -->
+   <link rel="stylesheet" href="css/magnific-popup.css">
+   <link rel="stylesheet" href="css/custom.css">
+   <title>Talk2Me</title>
+</head>
+<body>
 
-        </main>
-        <!-- Footer-->
-        <footer class="bg-classic py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0 text-white">Talk2Me &copy; 2023</div></div>
-                    <div class="col-auto">
-                        <a class="link-light small" href="privacy.html">Privacy</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="terms.html">Terms</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="contact.html">Contact</a>
-                    </div>
-                </div>
+ 
+
+   <!-- ======================================== NAVIGATION ======================================== -->
+   <nav id="navigation" class="navbar fixed-top p-0">
+      <div class="container">
+         <!-- <a class="logo" href="#"><img src="img/logo.png" alt=""></a> -->
+         <a class="logo">Talk2Me</a>
+         <div class="sidenav">
+            <div class="header">
+               <a class="logo d-lg-none" >Talk2Me</a>
+               <a href="#" class="d-lg-none" id="showsidenav"><img src="img/icon/letter-x.png" alt=""> </a>
             </div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
-</html>   
+            <ul class="mb-0">
+               <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+               <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+               <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
+
+               <li class="nav-item"><a class="nav-link">Simple.</a></li>
+
+            </ul>
+         </div>
+         <div id="hamburger" class="d-lg-none">
+            <img src="img/icon/menu.png" class="img01" alt="">
+         </div>
+      </div>
+   </nav>
+
+
+
+   <!-- ======================================== HOME SECTION ======================================== -->
+   <section id="homeSection">
+      <div class="owl-carousel">
+         <div class="slider-box slider-box1">
+            <div class="overlay">
+               <div class="container">
+                  <div class="row">
+                     <div class="col">
+                        <div class="txt-box">
+                           <div class="txt-area">
+                              <p>WELCOME TO TALK2ME</p>
+                              <h1>BUILD LIFE-LONG CONNECTIONS</h1>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="slider-box slider-box2">
+            <div class="overlay">
+               <div class="container">
+                  <div class="row">
+                     <div class="col">
+                        <div class="txt-box" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                           <div class="txt-area">
+                              <p>WE VALUE CONNECTIONS</p>
+                              <h1>PROMOTE AND SHARE YOUR KNOWLEDGE</h1>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+
+   <!-- ======================================== FEATURE SECTION ======================================== -->
+   <section id="featureSection">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-7">
+               <div class="img-box">
+                  <img src="img/featured-image-1.jpg" class="img01 wow slideInLeft" data-wow-duration="1.5s" alt="">
+                  <img src="img/featured-image-2.jpg" class="img02 wow slideInLeft" data-wow-duration="2s" alt="">
+               </div>
+            </div>
+            <div class="col-lg-5">
+               <div class="txt-box">
+                  <div class="sec-header">
+                     <h2>COLLABORATION & <br> COMMUNITY<span>.</span></h2>
+                     <h4>DEDICATED TO EMPOWERING YOU TO INVEST IN MEANINGFUL CONNECTIONS AND FORM LIFELONG FRIENDSHIPS.</h4>
+                     <p>At Talk2Me, we recognize the inherent value each individual brings. <br> Our platform enables you to share your unique experiences and skills, connecting with those who appreciate your time and are willing to compensate you for it.</p>
+                  </div>
+                  <div class="part2">
+                     <ul>
+                        <li><i class="fal fa-check"></i> Personalized 1-on-1 Calls</li>
+                        <li><i class="fal fa-check"></i> Effortless Booking System</li>
+                        <li><i class="fal fa-check"></i> Transparent Payout Tracker</li>
+                     </ul>
+                     <div class="since">
+                        <span>SINCE <br>2020</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+
+   <!-- ======================================== SERVICE SECTION ======================================== -->
+   <section id="serviceSection" >
+      <div class="container" >
+         <div class="row">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+               <div class="sec-header" >
+                  <h2 >WE HAVE CLIENTS FOR YOU<span>.</span></h2>
+                  <p>Unlock the potential of your passions and skills with Talk2Me – a platform where you can seamlessly showcase and capitalize on what you love to talk about, with minimal friction in realizing your ambitions. <br>
+                  <br> Always someone wlling to pay and interested in the advice, skills, and experiences you can share.</p>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+               <div class="service-box wow slideInRight" data-wow-duration="1.5s">
+                  <div class="txt-area">
+                     <h3>01</h3>
+                     <h4>UI/UX <br>DESIGNING</h4>
+                  </div>
+                  <div class="img-box">
+                     <img src="img/icon/uiux.png" alt="" class="img01">
+                     <img src="img/icon/uiux02.png" alt="" class="img02">
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+               <div class="service-box wow slideInRight" data-wow-duration="1.5s">
+                  <div class="txt-area">
+                     <h3>02</h3>
+                     <h4>APP <br>DEVELOPMENT</h4>
+                  </div>
+                  <div class="img-box">
+                     <img src="img/icon/app-development.png" alt="" class="img01">
+                     <img src="img/icon/app-development02.png" alt="" class="img02">
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+               <div class="service-box wow slideInRight" data-wow-duration="1.5s">
+                  <div class="txt-area">
+                     <h3>03</h3>
+                     <h4>SEO & CONTENT <br>WRITING</h4>
+                  </div>
+                  <div class="img-box">
+                     <img src="img/icon/content-writing.png" alt="" class="img01">
+                     <img src="img/icon/content-writing02.png" alt="" class="img02">
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+               <div class="service-box wow slideInRight" data-wow-duration="1.5s">
+                  <div class="txt-area">
+                     <h3>04</h3>
+                     <h4>DIGITAL <br>MARKETING</h4>
+                  </div>
+                  <div class="img-box">
+                     <img src="img/icon/digital-marketing.png" alt="" class="img01">
+                     <img src="img/icon/digital-marketing02.png" alt="" class="img02">
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+               <div class="service-box wow slideInRight" data-wow-duration="1.5s">
+                  <div class="txt-area">
+                     <h3>05</h3>
+                     <h4>GRAPHIC <br>DESIGNING</h4>
+                  </div>
+                  <div class="img-box">
+                     <img src="img/icon/graphic-design.png" alt="" class="img01">
+                     <img src="img/icon/graphic-design02.png" alt="" class="img02">
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+               <div class="service-box wow slideInRight" data-wow-duration="1.5s">
+                  <div class="txt-area" >
+                     <h3>06</h3>
+                     <h4>WEBSITE <br>DEVELOPMENT</h4>
+                  </div>
+                  <div class="img-box">
+                     <img src="img/icon/web-development.png" alt="" class="img01">
+                     <img src="img/icon/web-development02.png" alt="" class="img02">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+
+
+   <!-- ======================================== PORTFOLIO SECTION ======================================== -->
+   <section id="portfolioSection">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-6">
+               <div class="sec-header">
+                  <h2>OUR FOUNDING<span>.</span></h2>
+               </div>
+            </div>
+            <div class="col-lg-6">
+               <div class="indicator float-lg-right">
+                  <span class="mixer active" data-filter="all">TEAM</span>
+                  <span class="mixer" data-filter=".web">SHADI EL-FARES</span>
+                  <span class="mixer" data-filter=".branding">FURQAAN KHURRAM QAMAR</span>
+               </div>
+            </div>
+         </div>
+         <div id="portfolio">
+            <div class="row">
+               <div class="col-md-6 col-lg-4 mix web">
+                  <div class="portfolio-box">
+                     <div class="img-box">
+                        <a href="#portfolioPreview01" class="popup-with-zoom-anim">
+                           <img src="./pics/Shadi.jpg" class="img-fluid" alt="">
+                        </a>
+                        <div id="portfolioPreview01" class="zoom-anim-dialog mfp-hide portfolio-preview">
+                           <div class="row">
+       
+                              <div class="col-md-6">
+                                 <div class="description">
+                                    <h4>SHADI</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, doloribus, voluptas. Facere, hic quae cupiditate velit a, autem sunt dolor.</p>
+                                    <ul>
+                                       <li><i class="fal fa-file-alt"></i> Current : <span>Engineering Level 1 @ McMaster University</span></li>
+                                       <li><i class="fad fa-user-tie"></i> Title : <span>Founder & CTO</span></li>
+                                       <li class="mb-0"><i class="fal fa-external-link"></i> Portfolio : <a href="www.shadielfares.me" target="_blank">Check out my work!</a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="hover-txt">
+                        <p>MORE DETAILS...</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-4 mix branding photography">
+                  <div class="portfolio-box">
+                     <div class="img-box">
+                        <a href="#portfolioPreview02" class="popup-with-zoom-anim">
+                           <img src="./pics/Furqaan.jpg" class="img-fluid" alt="">
+                        </a>
+                        <div id="portfolioPreview02" class="zoom-anim-dialog mfp-hide portfolio-preview">
+                           <div class="row">
+                              <div class="col-md-6">
+                                 <div class="description">
+                                    <h4>FURQAAN</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, doloribus, voluptas. Facere, hic quae cupiditate velit a, autem sunt dolor.</p>
+                                    <ul>
+                                       <li><i class="fal fa-file-alt"></i> Current : <span>Engineering Level 1 @ McMaster University</span></li>
+                                       <li><i class="fad fa-user-tie"></i> Title : <span>Co-Founder & CFO</span></li>
+                                       <li class="mb-0"><i class="fal fa-external-link"></i> Preview : <a href="https://furqaankhurram.notion.site/Furqaan-Khurram-Qamar-13127e5a74034af5a0f1f6ff2cb2873c" target="_blank">Check out my work!</a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="hover-txt">
+                        <p>MORE DETAILS...</p>
+                     </div>
+                  </div>
+               </div>
+
+  
+            </div>
+         </div>
+      </div>
+      <div class="container">
+
+<div class="col-lg-6">
+    <div class="sec-header">
+      <div class="description">
+      <founding-text>
+        <p>As the end of our first semester of Engineering 1 at McMaster University approached, and winter break kicked off on a random Tuesday night, Furqaan received a call from me. <br> <br>  "Hey man, you want to start a company with me?" - Shadi <br> <br> "Yeah, what's it about?" - Furqaan <br> <br> "We'll talk about it tomorrow, sound good?" - Shadi <br> <br>  "Sounds good." - Furqaan <br> <br> <special-stuff> We aimed for a space without all the ads and noise. Talk2Me is all about those real connections, kicked off by a simple phone call between friends.</special-stuff></p>
+      </founding-text>
+      </div>
+    </div>
+</div>
+
+   </section>
+
+
+  
+
+   <!-- ======================================== CONTACT AREA 2 ======================================== -->
+   <section id="contactArea">
+      <div class="container">
+         <div class="contact-box wow fadeInRightBi" data-wow-duration="1.5s">
+            <div class="row">
+               <div class="col-lg-9 mb-3 mb-lg-0">
+                  <div class="sec-header">
+                     <h2>LET US HELP<br>YOU<span>.</span></h2>
+                  </div>
+               </div>
+               <div class="col-lg-3">
+                  <a href="contact.html" class="btn layer-btn">CONTACT US</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+
+
+
+   <!-- ======================================== FOOTER SECTION ======================================== -->
+   <section id="footerSection">
+      <div class="container">
+         </div>
+         <div class="copy-right">
+            <div class="row">
+               <div class="col">
+                  <span>Copyright © 2024 Talk2Me. All rights reserved. <br><a href="Privacy Policy.html">Privacy Policy</a>    <br>   <a href="Terms of Service.html">Terms Of Use</a>
+                  </span>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- ======================================== SCROLL TO TOP ICON ======================================== -->
+   <a href="#" class="scroll-up">
+      <i class="fal fa-chevron-up"></i>
+   </a>
+
+
+   <script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/font-awesome-pro.js"></script>
+   <!-- SCROLL ANIAMATION Plugin -->
+   <script src="js/wow.min.js"></script>
+   <!-- MIXIT UP Plugin -->
+   <script src="js/mixitup.min.js"></script>
+   <!-- MAGNIFIC POPUP Plugin -->
+   <script src="js/jquery.magnific-popup.min.js"></script>
+   <!-- CounterUp Plugin -->
+   <script src="js/jquery.counterup.min.js"></script>
+   <script src="js/jquery.waypoints.min.js"></script>
+   <!-- OWL CAROUSEL Plugin -->
+   <script src="js/owl.carousel.min.js"></script>
+   <script src="js/custom.js"></script>
+   <script>
+
+
+
+
+
+   </script>
+</body>
+</html>
